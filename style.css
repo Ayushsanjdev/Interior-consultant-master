@@ -12,6 +12,13 @@
 	box-sizing: border-box;
 	font-size: 14px;
 }
+
+#main-container {
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+
 header {	
 	padding: 30px 50px;
 	overflow: hidden;
@@ -47,21 +54,28 @@ header #head {
 }
 
 #main {
-	width: 1200px;
 	overflow: hidden;
+
 }
 
 #div-left {
 	float: left;
-	width: 35%;
+	width: 30%;
+	margin: 90px 40px;
 }
 
 .img-1 {
-	width:  30em;
+	width:  100%;
 }
 
 #div-right {
 	float: right;
-	width: 610px;
+	width: 55%;
 }
+
+#div-right .img-1 {
+	padding: 10px 30px;
+}
+
+
 
