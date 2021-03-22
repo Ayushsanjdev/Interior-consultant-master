@@ -1,0 +1,67 @@
+/*below border property used as a debugger tool for layout issues*/
+
+* {
+	border: 1px solid grey;
+}
+
+* {
+	background-color: #181719;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+header {	
+	padding: 30px 50px;
+	overflow: hidden;
+}
+
+header #head {
+	float: left;
+	font-family: crimson pro;
+	border: 1px solid #fff;
+	font-size: 0.6rem;
+	width: 100px;
+	font-weight: 200;
+	padding: 5px;
+	text-align: center;
+}
+
+#nav-bar {
+	float: right;
+	overflow: hidden;
+	padding: 3px;
+}
+
+#nav-bar #nav-ul {
+	list-style: none;
+}
+
+#nav-ul > li, .nav-link {
+	display: inline;
+	font-family: montserrat;
+	text-decoration: none;
+	padding: 15px;
+	font-size: 0.8rem;
+}
+
+#main {
+	width: 1200px;
+	overflow: hidden;
+}
+
+#div-left {
+	float: left;
+	width: 35%;
+}
+
+.img-1 {
+	width:  30em;
+}
+
+#div-right {
+	float: right;
+	width: 610px;
+}
+
