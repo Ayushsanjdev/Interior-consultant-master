@@ -4,13 +4,26 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- linking google fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson pro|Montserrat|name">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=crimson pro|Montserrat|name">
 	<!-- linking css -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- upper title of webpage -->
+	<!-- cloudflare for icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Interior Consultant Master</title>
 </head>
 <body>
+	<div class="mobile-nav" id="mobile-nav">
+		<div class="close-btn" onclick="toggleMobileNavigation()">
+			<button>
+				<i class="fa fa-close"></i>
+			</button>
+		</div>
+		<a href="#home" class="mobile-nav-link mobile-nav-link-active">Home</a>
+		<a href="#collection" class="mobile-nav-link">Collection</a>
+		<a href="#about" class="mobile-nav-link">About</a>
+		<a href="#contact" class="mobile-nav-link">Contact</a>
+	</div>
 	<div id="main-container">
 		<header>
 			<!-- logo name or company name or header-->
@@ -21,12 +34,17 @@
 			<nav id="nav-bar">
 				<ul id="nav-ul">
 					<!-- nav links -->
-					<li><a href="#home" class="nav-link">Home</a></li>
+					<li><a href="#home" class="nav-link nav-link-active">Home</a></li>
 					<li><a href="#collection" class="nav-link">Collection</a></li>
 					<li><a href="#about" class="nav-link">About</a></li>
 					<li><a href="#contact" class="nav-link">Contact</a></li>
 				</ul>
 			</nav>
+			<div class="menu-btn" onclick="toggleMobileNavigation()">
+				<button>
+				<i class="fa fa-reorder"></i>
+			</button>
+			</div>
 		</header>
 		<!-- navigation ends -->
 		<main id="main">
@@ -44,17 +62,18 @@
 			<div id="div-right">
 				<div id="interior-div">
 					<img src="photo1.png" class="img-1">
-				</div>
+				
 				<!-- right profile part -->
 				<div id="profile-div">
 					<div id="profile-dp">
 						<img src="photo2.png">
+						<div id="profile-intro">
+							<h4>Miss Badola</h4>
+							<h5 class="light-head">Interior Designer</h5>
+						</div>
 					</div>
-					<div id="profile-intro">
-						<h4>Miss Badola</h4>
-						<h5>Interior Designer</h5>
 						<div id="profile-about">
-							<p>Designed in 2021 by Badola</p>
+							<p>Designed in 2021 by <br>Badola</p>
 						</div>
 					</div>
 				</div>
@@ -65,7 +84,7 @@
 		<!-- footer content start -->
 		<footer id="footer">
 			<p class="footer-para">
-				Created by <a href="github.com/ayushsanjdev">
+				Created by <a href="www.github.com/ayushsanjdev">
 					ayushsanjdev
 				</a>
 				- devchallenges.io
@@ -73,6 +92,8 @@
 		</footer>
 	<!-- footer ends -->
 	</div>
+	<!-- linking javascript to use mobile nav menu button -->
+	<script type="text/javascript" src="script.js"></script>
 </body>
 <!-- html ends -->
 </html>

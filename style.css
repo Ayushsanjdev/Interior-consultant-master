@@ -1,8 +1,10 @@
 /*below border property used as a debugger tool for layout issues*/
 
 * {
-	border: 1px solid grey;
+	/*border: 1px solid lightgreen;*/
 }
+
+/*resetting everything or say starters of css*/
 
 * {
 	background-color: #181719;
@@ -13,14 +15,15 @@
 	font-size: 14px;
 }
 
+/*main document area*/
 #main-container {
 	max-width: 1200px;
 	margin: 0 auto;
-
 }
 
+/*header part begins*/
 header {	
-	padding: 30px 50px;
+	padding: 30px;
 	overflow: hidden;
 }
 
@@ -35,6 +38,7 @@ header #head {
 	text-align: center;
 }
 
+/*header closes and nav begins/*/
 #nav-bar {
 	float: right;
 	overflow: hidden;
@@ -52,30 +56,206 @@ header #head {
 	padding: 15px;
 	font-size: 0.8rem;
 }
+.nav-link-active {
+	text-decoration: underline;
+	text-decoration-color: lightblue;
+}
 
+.nav-link:hover {
+	background-color: grey;
+}
+
+/*main content*/
 #main {
 	overflow: hidden;
-
+	display: inline-flex;
+	margin-top: 60px;
+	
 }
+#main #container {
+	padding: 10px;
+	width: 45%;
+}
+
+/*left part */
 
 #div-left {
-	float: left;
-	width: 30%;
-	margin: 90px 40px;
+	width: 70%; 
+	margin: 0 auto;
 }
 
-.img-1 {
-	width:  100%;
+#div-left .left-head {
+	font-size: 2.5em;
 }
 
+#div-left .left-para {
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+
+.left-head, .left-para, .left-head-3 {
+	padding: 15px;
+}
+
+/*rightpart*/
 #div-right {
-	float: right;
 	width: 55%;
+	margin: 0 auto;
 }
 
 #div-right .img-1 {
-	padding: 10px 30px;
+	width: 100%;
+	padding: 20px;
+}
+
+/*profile of miss badoala*/
+#profile-div {
+	width: 45%;
+	margin: 0 auto;
+	margin-top: -100px;
+	float: right;
+	background: #181719;
+	position: relative;
+	margin-right: 50px;
+	box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+#profile-dp {
+	display: inline-flex;
+}
+
+#profile-dp > img{
+	width: 20%;
+	border-radius: 50%;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+#profile-intro > h4{
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+
+.light-head {
+	color: #828282;
+	margin-top: 5px;
+	margin-left: 10px;
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+
+#profile-about > p {
+	font-size: 1.2rem;
+	margin: 10px;
 }
 
 
+/*footer part*/
+.footer-para {
+	text-align: center;
+	margin-top: 10%;
+	margin-bottom: 30px;
+	color: #A9A9A9;
+}
+.footer-para a {
+	color: #A9A9A9;
+}
 
+
+/*mobile nav starts*/
+.menu-btn {
+	flex-grow: 1;
+	display: none;
+}
+
+.menu-btn button {
+	border: none;
+	background-color: #181719;
+	font-size: 1.5rem;
+}
+
+.mobile-nav {
+	position: absolute;
+	width: 100vw;
+	height: 60vh;
+	background-color: #181719;
+	padding: 24px;
+	display: none;
+	transform: translateX(-100%);
+	transition: transform 500ms ease-in-out;
+}
+
+.mobile-nav-open {
+	transform: translateX(0);
+	
+}
+
+.close-button button {
+	border: none;
+	background-color: #181719;
+	font-size: 2rem;
+}
+
+.mobile-nav-link {
+	font-size: 2rem;
+	font-family: crimson pro;
+	margin-top: 50px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: #fff;
+	display: block;
+	margin-bottom: 24px; 
+
+
+}
+
+.mobile-nav-link-active {
+	color: yellow;
+}
+
+/*media queries starts*/
+
+@media only screen and (max-width: 700px) {
+	#main {
+		display: inline-block;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+	#main #container {
+		width: 100%;
+		height: auto;
+	}
+	
+	#profile-div {
+		width: 60%;
+	}
+	#nav-ul > li, .nav-link {
+		padding: 10px;
+	}
+	#div-right,#div-left{
+			width: 80%;
+		}
+}
+/*media query starts*/
+
+@media only screen and (max-width: 530px) {
+	#nav-bar {
+		display: none;
+	}
+	.mobile-nav {
+		display: block;
+	}
+	.menu-btn {
+		display: block;
+		float: right;
+	}
+	.close-btn {
+		float: right;
+	}
+	
+}
+
+/*styling finished*/
