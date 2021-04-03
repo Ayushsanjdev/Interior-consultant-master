@@ -1,9 +1,3 @@
-/*below border property used as a debugger tool for layout issues*/
-
-* {
-	/*border: 1px solid lightgreen;*/
-}
-
 /*resetting everything or say starters of css*/
 
 * {
@@ -110,7 +104,7 @@ header #head {
 
 /*profile of miss badoala*/
 #profile-div {
-	width: 45%;
+	width: 35%;
 	margin: 0 auto;
 	margin-top: -100px;
 	float: right;
@@ -174,28 +168,30 @@ header #head {
 	border: none;
 	background-color: #181719;
 	font-size: 1.5rem;
+	cursor: pointer;
 }
 
 .mobile-nav {
 	position: absolute;
 	width: 100vw;
-	height: 60vh;
+	height: 80vh;
 	background-color: #181719;
 	padding: 24px;
 	display: none;
 	transform: translateX(-100%);
 	transition: transform 500ms ease-in-out;
+	position: absolute;
 }
 
 .mobile-nav-open {
 	transform: translateX(0);
-	
 }
 
 .close-button button {
 	border: none;
 	background-color: #181719;
 	font-size: 2rem;
+	cursor: pointer;
 }
 
 .mobile-nav-link {
@@ -208,8 +204,6 @@ header #head {
 	color: #fff;
 	display: block;
 	margin-bottom: 24px; 
-
-
 }
 
 .mobile-nav-link-active {
